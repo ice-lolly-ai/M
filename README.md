@@ -1,41 +1,41 @@
 # M+
 
-M+ is a modern, compilable programming language based on TypeScript, designed to offer simplicity, robustness, and high performance. <br>
+M+ is a modern, compilable programming language based on TypeScript, designed to offer simplicity, robustness, and high performance. <br><br>
 M+ aims to combine the best features from multiple programming languages, including JavaScript, C++, Java, and Python, <br>
 while introducing an English-based keyword system for greater readability. It is intended to be both easy for beginners to <br>
 learn and powerful enough to handle complex applications.
-
+<br>
 History
 M+ was developed in 2024 with the goal of creating a programming language that simplifies development without sacrificing performance. <br>
 Its design draws heavily from TypeScript and JavaScript, particularly in its use of strong typing and syntax, <br>
 while incorporating features from compiled languages like C++ for better performance. The introduction of English-based keywords<br>
 makes it distinct, offering a more natural and intuitive way for developers to write code.
-
+<br>
 Design Philosophy
 M+ is designed around the following principles:
-
+<br>
 **Simplicity**: M+ is built to be easy to learn, using intuitive, English-like keywords for common programming constructs. <br>
-This makes it accessible to new developers while retaining the flexibility for advanced usage.
+This makes it accessible to new developers while retaining the flexibility for advanced usage.<br>
 **Performance**: The language is compilable, producing optimized machine code for efficient execution. <br>
-This allows M+ to be used in both small-scale and high-performance systems.
+This allows M+ to be used in both small-scale and high-performance systems.<br>
 **Robustness**: M+ enforces strong typing and includes comprehensive error handling to reduce runtime <br>
 issues and provide greater control over data types and operations.
-Features
+Features<br><br>
 M+ integrates features from several established programming languages:
 
 **Readable Syntax**: M+ uses plain English-based keywords for its syntax. For example, `hold` is used for declaring variables, <br>
-`method` for defining functions, and `check` for conditionals.
+`method` for defining functions, and `check` for conditionals.<br>
 **Compilable**: The M+ compiler generates highly optimized machine code to enhance performance, <br>
-similar to compiled languages like C and C++.
+similar to compiled languages like C and C++.<br>
 **Strong Typing**: M+ supports strong, static typing wittype inference, allowing both explicit type declarations<br>
-and inferred types for flexibility and safety, similar to TypeScript.
+and inferred types for flexibility and safety, similar to TypeScript.<br>
 **Asynchronous Support**: Built-in support for asynchronous programming, using keywords like `defer` <br>
-and `fetch` to simplify the management of asynchronous tasks.
+and `fetch` to simplify the management of asynchronous tasks.<br>
 **Memory Management**: M+ includes automatic memory management through garbage collection, reducing the<br>
-burden on developers for manual memory management while maintaining efficient use of resources.
+burden on developers for manual memory management while maintaining efficient use of resources.<br>
 **Cross-Platform**: M+ is designed to be cross-platform, able to compile to binaries that run on multiple <br>
 operating systems including Windows, macOS, and Linux.
-Syntax
+Syntax<br><br>
 M+ uses a clean and readable syntax that is beginner-friendly while still offering the power expected from<br>
 modern programming languages. Below are examples of some basic M+ syntax.
 
