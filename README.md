@@ -107,13 +107,20 @@ attempt {
 
 ```
 Tooling and Compilation
-M+ is supported by a command-line compiler that translates M+ code into optimized machine code, allowing programs to run efficiently on various platforms. The compilation process also includes robust error checking, helping developers catch issues early.
+M+ is supported by a command-line compiler that translates M+ code into optimized machine code, <br>
+allowing programs to run efficiently on various platforms. <br><br>
+The compilation process also includes robust error checking, helping developers catch issues early.
 
 
-To compile a basic M+ program:mplusc hello.mplus -o hello.exe The M+ compiler is cross-platform and can produce executables for Windows, macOS, and Linux.
+To compile a basic M+ program:mplusc hello.mplus -o hello.exe The M+ compiler is cross-platform and <br> can produce executables for Windows, macOS, and Linux.
 
 Applications
-M+ is versatile and can be used for a wide range of applications, from web development and mobile apps to system-level programming and enterprise solutions. Its simple syntax and strong typing make it suitable for educational purposes, while its performance characteristics allow it to scale to more complex use cases, including backend services, game development, and high-performance computing.
+M+ is versatile and can be used for a wide range of applications, <br>
+from web development and mobile apps to system-level programming and enterprise solutions. <br>
+Its simple syntax and strong typing make it suitable for educational purposes, while its performance characteristics <br>
+allow it to scale to more complex use cases, including backend services, game development, and high-performance computing.
 
 Future Development
-Future releases of M+ are expected to introduce support for additional features such as generics, higher-order functions, and extended library support. The goal is to evolve M+ into a fully-featured modern language while maintaining its core philosophy of simplicity and power.
+Future releases of M+ are expected to introduce support for additional features such as generics, higher-order functions,<br>
+and extended library support. The goal is to evolve M+ into a fully-featured modern language while <br>
+maintaining its core philosophy of simplicity and power.
