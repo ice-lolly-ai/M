@@ -236,6 +236,7 @@ while (counter < 5) {
     counter += 1;
 }
 ```
+```
 
 2.3 Switch/Match Cases
 M+ also allows for switch or match-like constructs.
