@@ -1,2 +1,2 @@
-# M-
+# M+
 Compiler for M+ code
