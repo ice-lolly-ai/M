@@ -182,20 +182,19 @@ hold numbers: list = [1, 2, 3, 4];
 auto height = 5.9;  // Type inferred as number
 ```
 ```
-### 1.2 Constants
+1.2 Constants
 Use `const` to declare a constant value that cannot be changed after initialization.
-```
-```
-#### Example:
+
+Example:
 
 const PI: number = 3.1415;
 const greeting: text = "Hello, world!";
-
+```
+```
 1.3 Functions and Methods
 Functions are declared using the `method` keyword in M+. They can take parameters and return values.
 Example:
 
-```mplus
 method add(x: number, y: number) -> number {
     return x + y;
 }
@@ -204,46 +203,44 @@ method greet(name: text) -> text {
     return "Hello, " + name;
 }
 ```
+```
+2. Control Flow
 
-## 2. Control Flow
-
-### 2.1 Conditional Statements
+2.1 Conditional Statements
 M+ uses `check` for `if` statements and `otherwise` for `else`.
 
-#### Example:
+Example:
 
-```mplus
 check (age > 18) {
     show("You are an adult.");
 } otherwise {
     show("You are a minor.");
 }
+```
+```
 
-
-##2.2 Loops
+2.2 Loops
 Loops can be written using iterate for for loops.
 
-#### Example:
-```mplus
-Copy code
+Example:
+
 iterate i from 0 to 10 {
     show(i);
 }
 
 Alternatively, M+ provides a while loop for indefinite looping:
 
-```mplus
-
 hold counter = 0;
 while (counter < 5) {
     show(counter);
     counter += 1;
 }
-##2.3 Switch/Match Cases
+```
+
+2.3 Switch/Match Cases
 M+ also allows for switch or match-like constructs.
 
-#### Example:
-```mplus
+Example:
 
 check (fruit) {
     case "apple":
@@ -253,12 +250,12 @@ check (fruit) {
     otherwise:
         show("Unknown fruit.");
 }
-
-## 3. Error Handling
+```
+```
+3. Error Handling
 M+ provides structured error handling using attempt and rescue.
 
-#### Example:
-```mplus
+Example:
 
 attempt {
     hold result = divide(10, 0);
@@ -268,41 +265,41 @@ attempt {
 } finally {
     show("Operation complete.");
 }
+```
+```
+4. Data Structures
 
-##4. Data Structures
-
-##4.1 Lists (Arrays)
+4.1 Lists (Arrays)
 Lists are used to store ordered collections of items.
 
-#### Example:
-```mplus
+Example:
 
 hold myList: list = [1, 2, 3, 4, 5];
 show(myList[0]);  // Access first element
-
-## 4.2 Maps (Dictionaries)
+```
+```
+4.2 Maps (Dictionaries)
 Maps store key-value pairs.
 
-#### Example:
-```mplus
+Example:
 
 hold myMap: map = {"name": "Alice", "age": 25};
 show(myMap["name"]);  // Outputs: Alice
-
-## 4.3 Tuples
+```
+```
+4.3 Tuples
 M+ supports tuples, which are immutable collections of items.
 
-#### Example:
-```mplus
+Example:
 
 hold myTuple = (1, "Alice", true);
-
-## 5. Object-Oriented Programming
-## 5.1 Classes
+```
+```
+5. Object-Oriented Programming
+6. 5.1 Classes
 M+ supports class-based object-oriented programming. Classes are defined using the class keyword.
 
-##### Example:
-```mplus
+Example:
 
 class Person {
     hold name: text;
@@ -317,12 +314,12 @@ class Person {
         return "Hello, my name is " + self.name;
     }
 }
-
-## 5.2 Inheritance
+```
+```
+5.2 Inheritance
 M+ allows for inheritance using the inherit keyword.
 
-#### Example:
-```mplus
+Example:
 
 class Employee inherit Person {
     hold position: text;
@@ -336,12 +333,12 @@ class Employee inherit Person {
         return self.name + " is working as a " + self.position;
     }
 }
-
-## 5.3 Interfaces
+```
+```
+5.3 Interfaces
 Interfaces define a contract for classes.
 
-#### Example:
-```mplus
+Example:
 
 interface Drawable {
     method draw();
@@ -352,20 +349,20 @@ class Circle inherit Drawable {
         show("Drawing a circle.");
     }
 }
-
-## 6. Functions
-## 6.1 Lambda Expressions
+```
+```
+6. Functions
+6.1 Lambda Expressions
 M+ supports anonymous functions (lambdas).
 
-#### Example:
-```mplus
+Example:
 
 hold square = (x: number) -> number {
     return x * x;
 };
 show(square(5));  // Outputs: 25
 yaml
-
+```
 
 ---
 
