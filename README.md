@@ -124,53 +124,57 @@ Future Development
 Future releases of M+ are expected to introduce support for additional features such as generics, higher-order functions,<br>
 and extended library support. The goal is to evolve M+ into a fully-featured modern language while <br>
 maintaining its core philosophy of simplicity and power.
+<br><br>
+# M+ Language Documentation
 
-M+ Language Documentation
-Overview
-M+ is a compilable, high-performance programming language based on TypeScript with elements from C++, Python, Java, and JavaScript. Its goal is to be beginner-friendly while retaining the flexibility and power for complex applications. M+ introduces English-based keywords for greater readability and intuitive use.
+M+ is a modern, compilable programming language based on TypeScript with elements from C++, Python, Java, and JavaScript. Its goal is to be beginner-friendly while retaining the flexibility and power for complex applications. M+ introduces English-based keywords for greater readability and intuitive use.
 
-Table of Contents
-Basic Syntax and Structure
-Variables and Data Types
-Constants
-Functions and Methods
-Control Flow
-Conditional Statements
-Loops
-Switch/Match Cases
-Error Handling
-Data Structures
-Lists (Arrays)
-Maps (Dictionaries)
-Tuples and Sets
-Object-Oriented Programming
-Classes
-Inheritance
-Interfaces
-Functions
-Lambda Expressions
-Recursion
-Higher-Order Functions
-Asynchronous Programming
-Async and Await
-Modules and Imports
-Built-In Libraries
-Compiler Usage
-How to Compile and Run M+ Code
-1. Basic Syntax and Structure
-1.1 Variables and Data Types
-M+ supports both type-inferred variables and explicitly typed variables. M+ uses the hold keyword to declare variables.
+## Table of Contents
+1. [Basic Syntax and Structure](#basic-syntax-and-structure)
+    - [Variables and Data Types](#variables-and-data-types)
+    - [Constants](#constants)
+    - [Functions and Methods](#functions-and-methods)
+2. [Control Flow](#control-flow)
+    - [Conditional Statements](#conditional-statements)
+    - [Loops](#loops)
+    - [Switch/Match Cases](#switchmatch-cases)
+3. [Error Handling](#error-handling)
+4. [Data Structures](#data-structures)
+    - [Lists (Arrays)](#lists-arrays)
+    - [Maps (Dictionaries)](#maps-dictionaries)
+    - [Tuples](#tuples)
+5. [Object-Oriented Programming](#object-oriented-programming)
+    - [Classes](#classes)
+    - [Inheritance](#inheritance)
+    - [Interfaces](#interfaces)
+6. [Functions](#functions)
+    - [Lambda Expressions](#lambda-expressions)
+    - [Recursion](#recursion)
+    - [Higher-Order Functions](#higher-order-functions)
+7. [Asynchronous Programming](#asynchronous-programming)
+8. [Modules and Imports](#modules-and-imports)
+9. [Built-In Libraries](#built-in-libraries)
+10. [Compiler Usage](#compiler-usage)
+    - [How to Compile and Run M+ Code](#how-to-compile-and-run-m-code)
 
-Data Types:
-number: For integers and floating-point numbers.
-text: String data type.
-bool: Boolean data type (true and false).
-list: Arrays/lists of values.
-map: Key-value pairs.
-auto: Automatically infers the type.
-Examples:
-mplus
-Copy code
+---
+
+## 1. Basic Syntax and Structure
+
+### 1.1 Variables and Data Types
+M+ supports both type-inferred variables and explicitly typed variables. M+ uses the `hold` keyword to declare variables.
+
+#### Data Types:
+- `number`: For integers and floating-point numbers.
+- `text`: String data type.
+- `bool`: Boolean data type (`true` and `false`).
+- `list`: Arrays/lists of values.
+- `map`: Key-value pairs.
+- `auto`: Automatically infers the type.
+
+#### Example:
+
+```mplus
 hold age: number = 25;
 hold name: text = "Alice";
 hold isStudent: bool = true;
@@ -197,8 +201,6 @@ method add(x: number, y: number) -> number {
 method greet(name: text) -> text {
     return "Hello, " + name;
 }
-M+ supports both typed and inferred return types, making it flexible for both strict and inferred type use.
-
 2. Control Flow
 2.1 Conditional Statements
 M+ uses check for if statements and otherwise for else.
@@ -229,7 +231,7 @@ while (counter < 5) {
     show(counter);
     counter += 1;
 }
-2.3 Switch/Match Case
+2.3 Switch/Match Cases
 M+ also allows for switch or match-like constructs.
 
 Example:
@@ -257,8 +259,6 @@ attempt {
 } finally {
     show("Operation complete.");
 }
-attempt blocks catch errors, and rescue handles them. A finally block can be used to execute code after attempt/rescue, regardless of success or failure.
-
 4. Data Structures
 4.1 Lists (Arrays)
 Lists are used to store ordered collections of items.
@@ -412,5 +412,15 @@ bash
 Copy code
 mplusc myProgram.mplus -o myProgram.exe
 This will generate an executable that can be run on the target platform (Windows, macOS, Linux).
+
+yaml
+Copy code
+
+---
+
+This format is ready for use on GitHub, with proper headers, code block formatting, and sections that will be easy to navigate in a README or documentation page. Let me know if you need any further adjustments!
+
+
+
 
 
