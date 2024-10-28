@@ -44,8 +44,8 @@ M+ uses a clean and readable syntax that is beginner-friendly while still offeri
 modern programming languages. Below are examples of some basic M+ syntax.
 
 Variable Declaration
-```mplus hold age: number = 25; auto name = "Alice"; // Type inferred as text
-
+```
+mplus hold age: number = 25; auto name = "Alice"; // Type inferred as text
 
 method greet(name: text) -> text {
 
