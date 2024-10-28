@@ -3,8 +3,8 @@
 ![alt text](https://files.oaiusercontent.com/file-dnMbN8cZI21vtXyxwbjPE9Uv?se=2024-10-28T14%3A09%3A28Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D9139883a-06ca-4318-bb5d-6c7d6cb091f5.webp&sig=1s0ebkRG43HWa8vVptAHuFQfFnEnTLrDgKgdPJkD89U%3D)
 
 
-
-M+ is a modern, compilable programming language based on TypeScript, designed to offer simplicity, robustness, and high performance. <br><br>
+Named after my daughter Emmy (we all call her M), M is also short for 'Magic', <br>
+is a modern, compilable programming language based on TypeScript, designed to offer simplicity, robustness, and high performance. <br><br>
 M+ aims to combine the best features from multiple programming languages, including JavaScript, C++, Java, and Python, <br>
 while introducing an English-based keyword system for greater readability. It is intended to be both easy for beginners to <br>
 learn and powerful enough to handle complex applications.
