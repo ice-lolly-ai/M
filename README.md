@@ -9,7 +9,8 @@ while introducing an English-based keyword system for greater readability. It is
 learn and powerful enough to handle complex applications.
 <br><br>
 **History**<br>
-Named after my daughter Emmy (we all call her M), M is also short for 'Magic', <br> was developed in 2024 with the goal of creating a programming language that simplifies development without sacrificing performance. <br>
+Named after my daughter Emmy (we all call her M), M is also short for 'Magic', <br> version 1 'M' was developed in 2021, after a very very long testing phase 'M+' came about in 2024. <br>
+M+ is about creating a programming language that simplifies development without sacrificing performance. <br>
 Its design draws heavily from TypeScript and JavaScript, particularly in its use of strong typing and syntax, <br>
 while incorporating features from compiled languages like C++ for better performance. The introduction of English-based keywords<br>
 makes it distinct, offering a more natural and intuitive way for developers to write code.
