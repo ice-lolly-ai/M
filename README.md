@@ -180,7 +180,7 @@ hold name: text = "Alice";
 hold isStudent: bool = true;
 hold numbers: list = [1, 2, 3, 4];
 auto height = 5.9;  // Type inferred as number
-
+```
 ### 1.2 Constants
 Use `const` to declare a constant value that cannot be changed after initialization.
 
@@ -189,7 +189,8 @@ Use `const` to declare a constant value that cannot be changed after initializat
 ```mplus
 const PI: number = 3.1415;
 const greeting: text = "Hello, world!";
-
+```
+```
 ### 1.3 Functions and Methods
 Functions are declared using the `method` keyword in M+. They can take parameters and return values.
 
@@ -203,6 +204,7 @@ method add(x: number, y: number) -> number {
 method greet(name: text) -> text {
     return "Hello, " + name;
 }
+```
 
 ## 2. Control Flow
 
