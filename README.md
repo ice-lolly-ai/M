@@ -93,6 +93,7 @@ attempt {
 
 }
 
+```
 Tooling and Compilation
 M+ is supported by a command-line compiler that translates M+ code into optimized machine code, allowing programs to run efficiently on various platforms. The compilation process also includes robust error checking, helping developers catch issues early.
 
