@@ -127,8 +127,6 @@ maintaining its core philosophy of simplicity and power.
 <br><br>
 # M+ Language Documentation
 
-M+ is a modern, compilable programming language based on TypeScript with elements from C++, Python, Java, and JavaScript. Its goal is to be beginner-friendly while retaining the flexibility and power for complex applications. M+ introduces English-based keywords for greater readability and intuitive use.
-
 ## Table of Contents
 1. [Basic Syntax and Structure](#basic-syntax-and-structure)
     - [Variables and Data Types](#variables-and-data-types)
