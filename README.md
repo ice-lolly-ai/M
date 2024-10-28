@@ -36,7 +36,7 @@ and inferred types for flexibility and safety, similar to TypeScript.<br><br>
 **Asynchronous Support**: Built-in support for asynchronous programming, using keywords like `defer` <br>
 and `fetch` to simplify the management of asynchronous tasks.<br><br>
 **Memory Management**: M+ includes automatic memory management through garbage collection, reducing the<br>
-burden on developers for manual memory management while maintaining efficient use of resources.<br>
+burden on developers for manual memory management while maintaining efficient use of resources.<br><br>
 **Cross-Platform**: M+ is designed to be cross-platform, able to compile to binaries that run on multiple <br>
 operating systems including Windows, macOS, and Linux.
 Syntax<br><br><br>
