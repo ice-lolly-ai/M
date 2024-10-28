@@ -1,6 +1,7 @@
 # M+
 
-M+ is a modern, compilable programming language based on TypeScript, designed to offer simplicity, robustness, and high performance. M+ aims to combine the best features from multiple programming languages, including JavaScript, C++, Java, and Python, while introducing an English-based keyword system for greater readability. It is intended to be both easy for beginners to learn and powerful enough to handle complex applications.
+M+ is a modern, compilable programming language based on TypeScript, designed to offer simplicity, robustness, and high performance. 
+M+ aims to combine the best features from multiple programming languages, including JavaScript, C++, Java, and Python, while introducing an English-based keyword system for greater readability. It is intended to be both easy for beginners to learn and powerful enough to handle complex applications.
 
 History
 M+ was developed in 2024 with the goal of creating a programming language that simplifies development without sacrificing performance. Its design draws heavily from TypeScript and JavaScript, particularly in its use of strong typing and syntax, while incorporating features from compiled languages like C++ for better performance. The introduction of English-based keywords makes it distinct, offering a more natural and intuitive way for developers to write code.
