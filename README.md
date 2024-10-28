@@ -43,6 +43,7 @@ Syntax<br><br><br>
 M+ uses a clean and readable syntax that is beginner-friendly while still offering the power expected from<br>
 modern programming languages. Below are examples of some basic M+ syntax.
 
+<br>
 Variable Declaration
 ```
 mplus hold age: number = 25; auto name = "Alice"; // Type inferred as text
