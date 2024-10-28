@@ -49,9 +49,9 @@ method greet(name: text) -> text {
 
 }
 ```
-```
 
 Function Declaration
+```
 method greet(name: text) -> text {
 
     show("Hello, " + name);
@@ -60,6 +60,7 @@ method greet(name: text) -> text {
 ```
 
 Control Flow
+```
 check (age > 18) {
 
     show("You are an adult.");
@@ -69,8 +70,10 @@ check (age > 18) {
     show("You are a minor.");
 
 }
+```
 
 Asynchronous Operations
+```
 defer method fetchData(url: text) -> map {
 
     hold response = fetch http.get(url);
@@ -78,8 +81,10 @@ defer method fetchData(url: text) -> map {
     return response.data;
 
 }
+```
 
 Error Handling
+```
 attempt {
 
     hold result = divide(10, 0);
