@@ -124,3 +124,293 @@ Future Development
 Future releases of M+ are expected to introduce support for additional features such as generics, higher-order functions,<br>
 and extended library support. The goal is to evolve M+ into a fully-featured modern language while <br>
 maintaining its core philosophy of simplicity and power.
+
+M+ Language Documentation
+Overview
+M+ is a compilable, high-performance programming language based on TypeScript with elements from C++, Python, Java, and JavaScript. Its goal is to be beginner-friendly while retaining the flexibility and power for complex applications. M+ introduces English-based keywords for greater readability and intuitive use.
+
+Table of Contents
+Basic Syntax and Structure
+Variables and Data Types
+Constants
+Functions and Methods
+Control Flow
+Conditional Statements
+Loops
+Switch/Match Cases
+Error Handling
+Data Structures
+Lists (Arrays)
+Maps (Dictionaries)
+Tuples and Sets
+Object-Oriented Programming
+Classes
+Inheritance
+Interfaces
+Functions
+Lambda Expressions
+Recursion
+Higher-Order Functions
+Asynchronous Programming
+Async and Await
+Modules and Imports
+Built-In Libraries
+Compiler Usage
+How to Compile and Run M+ Code
+1. Basic Syntax and Structure
+1.1 Variables and Data Types
+M+ supports both type-inferred variables and explicitly typed variables. M+ uses the hold keyword to declare variables.
+
+Data Types:
+number: For integers and floating-point numbers.
+text: String data type.
+bool: Boolean data type (true and false).
+list: Arrays/lists of values.
+map: Key-value pairs.
+auto: Automatically infers the type.
+Examples:
+mplus
+Copy code
+hold age: number = 25;
+hold name: text = "Alice";
+hold isStudent: bool = true;
+hold numbers: list = [1, 2, 3, 4];
+auto height = 5.9;  // Type inferred as number
+1.2 Constants
+Use const to declare a constant value that cannot be changed after initialization.
+
+Example:
+mplus
+Copy code
+const PI: number = 3.1415;
+const greeting: text = "Hello, world!";
+1.3 Functions and Methods
+Functions are declared using the method keyword in M+. They can take parameters and return values.
+
+Example:
+mplus
+Copy code
+method add(x: number, y: number) -> number {
+    return x + y;
+}
+
+method greet(name: text) -> text {
+    return "Hello, " + name;
+}
+M+ supports both typed and inferred return types, making it flexible for both strict and inferred type use.
+
+2. Control Flow
+2.1 Conditional Statements
+M+ uses check for if statements and otherwise for else.
+
+Example:
+mplus
+Copy code
+check (age > 18) {
+    show("You are an adult.");
+} otherwise {
+    show("You are a minor.");
+}
+2.2 Loops
+Loops can be written using iterate for for loops.
+
+Example:
+mplus
+Copy code
+iterate i from 0 to 10 {
+    show(i);
+}
+Alternatively, M+ provides a while loop for indefinite looping:
+
+mplus
+Copy code
+hold counter = 0;
+while (counter < 5) {
+    show(counter);
+    counter += 1;
+}
+2.3 Switch/Match Case
+M+ also allows for switch or match-like constructs.
+
+Example:
+mplus
+Copy code
+check (fruit) {
+    case "apple":
+        show("You selected an apple.");
+    case "orange":
+        show("You selected an orange.");
+    otherwise:
+        show("Unknown fruit.");
+}
+3. Error Handling
+M+ provides structured error handling using attempt and rescue.
+
+Example:
+mplus
+Copy code
+attempt {
+    hold result = divide(10, 0);
+    show(result);
+} rescue (e) {
+    show("Error: Division by zero.");
+} finally {
+    show("Operation complete.");
+}
+attempt blocks catch errors, and rescue handles them. A finally block can be used to execute code after attempt/rescue, regardless of success or failure.
+
+4. Data Structures
+4.1 Lists (Arrays)
+Lists are used to store ordered collections of items.
+
+Example:
+mplus
+Copy code
+hold myList: list = [1, 2, 3, 4, 5];
+show(myList[0]);  // Access first element
+4.2 Maps (Dictionaries)
+Maps store key-value pairs.
+
+Example:
+mplus
+Copy code
+hold myMap: map = {"name": "Alice", "age": 25};
+show(myMap["name"]);  // Outputs: Alice
+4.3 Tuples
+M+ supports tuples, which are immutable collections of items.
+
+Example:
+mplus
+Copy code
+hold myTuple = (1, "Alice", true);
+5. Object-Oriented Programming
+5.1 Classes
+M+ supports class-based object-oriented programming. Classes are defined using the class keyword.
+
+Example:
+mplus
+Copy code
+class Person {
+    hold name: text;
+    hold age: number;
+
+    method init(name: text, age: number) {
+        self.name = name;
+        self.age = age;
+    }
+
+    method greet() -> text {
+        return "Hello, my name is " + self.name;
+    }
+}
+5.2 Inheritance
+M+ allows for inheritance using the inherit keyword.
+
+Example:
+mplus
+Copy code
+class Employee inherit Person {
+    hold position: text;
+
+    method init(name: text, age: number, position: text) {
+        super.init(name, age);
+        self.position = position;
+    }
+
+    method work() -> text {
+        return self.name + " is working as a " + self.position;
+    }
+}
+5.3 Interfaces
+Interfaces define a contract for classes.
+
+Example:
+mplus
+Copy code
+interface Drawable {
+    method draw();
+}
+
+class Circle inherit Drawable {
+    method draw() {
+        show("Drawing a circle.");
+    }
+}
+6. Functions
+6.1 Lambda Expressions
+M+ supports anonymous functions (lambdas).
+
+Example:
+mplus
+Copy code
+hold square = (x: number) -> number {
+    return x * x;
+};
+show(square(5));  // Outputs: 25
+6.2 Recursion
+Functions can call themselves recursively.
+
+Example:
+mplus
+Copy code
+method factorial(n: number) -> number {
+    check (n <= 1) {
+        return 1;
+    } otherwise {
+        return n * factorial(n - 1);
+    }
+}
+6.3 Higher-Order Functions
+M+ allows passing functions as arguments to other functions.
+
+Example:
+mplus
+Copy code
+method applyTwice(f: method(x: number) -> number, value: number) -> number {
+    return f(f(value));
+}
+
+hold double = (x: number) -> number {
+    return x * 2;
+};
+show(applyTwice(double, 5));  // Outputs: 20
+7. Asynchronous Programming
+M+ supports asynchronous programming using defer and fetch.
+
+Example:
+mplus
+Copy code
+defer method loadData(url: text) -> map {
+    hold response = fetch http.get(url);
+    return response.data;
+}
+
+defer method start() -> void {
+    hold data = fetch loadData("https://api.example.com");
+    show(data);
+}
+8. Modules and Imports
+M+ allows code modularity through import.
+
+Example:
+mplus
+Copy code
+import "myModule";
+
+method main() {
+    hold result = myModule.someFunction();
+    show(result);
+}
+9. Built-In Libraries
+M+ comes with built-in libraries for handling common tasks like HTTP requests, file I/O, and math operations.
+
+10. Compiler Usage
+10.1 How to Compile and Run M+ Code
+To compile an M+ program, use the M+ compiler:
+
+bash
+Copy code
+mplusc myProgram.mplus -o myProgram.exe
+This will generate an executable that can be run on the target platform (Windows, macOS, Linux).
+
+
