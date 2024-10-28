@@ -48,6 +48,8 @@ method greet(name: text) -> text {
     show("Hello, " + name);
 
 }
+```
+```
 
 Function Declaration
 method greet(name: text) -> text {
@@ -55,6 +57,7 @@ method greet(name: text) -> text {
     show("Hello, " + name);
 
 }
+```
 
 Control Flow
 check (age > 18) {
