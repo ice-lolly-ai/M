@@ -464,7 +464,7 @@ while (counter < 5) {
 ## `attempt`
 The attempt keyword is used to start a block of code where errors may occur. It’s similar to a try block in other languages.
 
-## Syntax:
+#### Syntax:
 ```
 attempt {
     // Code to attempt that might throw an error
@@ -480,7 +480,6 @@ The rescue keyword follows attempt and handles any errors that occur in the atte
 
 ####  Syntax:
 ```
-
 attempt {
     // Code that might throw an error
 } rescue (errorVariable) {
