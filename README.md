@@ -1,6 +1,6 @@
 # M+
 
-![alt text](https://files.oaiusercontent.com/file-dnMbN8cZI21vtXyxwbjPE9Uv?se=2024-10-28T14%3A09%3A28Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D9139883a-06ca-4318-bb5d-6c7d6cb091f5.webp&sig=1s0ebkRG43HWa8vVptAHuFQfFnEnTLrDgKgdPJkD89U%3D)
+![alt text](https://raw.githubusercontent.com/ice-lolly-ai/M/refs/heads/main/m_1.webp)
 
 
 M+ is a modern, compilable programming language based on TypeScript, designed to offer simplicity, robustness, and high performance. <br><br>
