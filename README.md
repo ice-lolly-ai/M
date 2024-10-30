@@ -377,6 +377,7 @@ hold variableName: Type = value;
 hold age: number = 25;
 auto name = "Alice";  // Type inferred as text
 ```
+
 ## `const`
 The const keyword declares a constant that cannot be changed once initialized.
 
@@ -414,11 +415,8 @@ check (age > 18) {
 }
 
 ```
-
-
-
-
-5. otherwise
+5.
+## `otherwise`
 The otherwise keyword works in conjunction with check as the equivalent of else. It provides an alternative block of code if the initial condition in check is false.
 
 #### Syntax:
@@ -440,7 +438,7 @@ check (age > 18) {
 The iterate keyword creates a for loop, allowing iteration over a range of values.
 
 #### Syntax:
-
+```
 iterate variable from start to end {
     // Code to execute in each iteration
 }
@@ -448,7 +446,7 @@ iterate variable from start to end {
 iterate i from 0 to 10 {
     show(i);
 }
-
+```
 
 ## `while`
 The while keyword creates a loop that runs as long as a specified condition is true.
@@ -462,7 +460,7 @@ while (counter < 5) {
     show(counter);
     counter += 1;
 }
-
+```
 
 ## `attempt`
 The attempt keyword is used to start a block of code where errors may occur. It’s similar to a try block in other languages.
