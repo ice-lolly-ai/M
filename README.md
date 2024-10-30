@@ -413,7 +413,7 @@ check (condition) {
 check (age > 18) {
     show("You are an adult.");
 }
-
+```
 
 ## `otherwise`
 The otherwise keyword works in conjunction with check as the equivalent of else. It provides an alternative block of code if the initial condition in check is false.
