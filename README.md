@@ -401,7 +401,7 @@ method add(x: number, y: number) -> number {
     return x + y;
 }
 ```
-#### `check`
+## `check`
 The check keyword initiates a conditional statement, similar to if in other languages. It evaluates a condition and executes code if the condition is true.
 
 #### Syntax:
@@ -520,7 +520,7 @@ attempt {
 The defer keyword is used to define an asynchronous function that may perform non-blocking operations.
 
 #### Syntax:
-
+```
 defer method asyncFunctionName(parameter: Type) -> returnType {
     // Code for asynchronous task
 }
@@ -558,5 +558,4 @@ method main() {
 }
 ```
 
----
 
