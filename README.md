@@ -373,7 +373,6 @@ The `hold` keyword is used to declare variables. It can declare a variable with 
 #### Syntax:
 ```
 hold variableName: Type = value;
-Example:
 
 hold age: number = 25;
 auto name = "Alice";  // Type inferred as text
@@ -384,10 +383,11 @@ The const keyword declares a constant that cannot be changed once initialized.
 #### Syntax:
 ```
 const constantName: Type = value;
-Example:
 
 const PI: number = 3.1415;
-3. method
+```
+
+## `method`
 The method keyword defines a function or method, specifying its parameters and return type.
 
 #### Syntax:
@@ -396,118 +396,111 @@ method functionName(parameter: Type) -> returnType {
     // Function body
 }
 
-Example:
-
 method add(x: number, y: number) -> number {
     return x + y;
 }
 ```
-#### check
+#### `check`
 The check keyword initiates a conditional statement, similar to if in other languages. It evaluates a condition and executes code if the condition is true.
 
-Syntax:
-mplus
-Copy code
+#### Syntax:
+```
 check (condition) {
     // Code to execute if condition is true
 }
-Example:
-mplus
-Copy code
+
 check (age > 18) {
     show("You are an adult.");
 }
+
+```
+
+
+
+
 5. otherwise
 The otherwise keyword works in conjunction with check as the equivalent of else. It provides an alternative block of code if the initial condition in check is false.
 
-Syntax:
-mplus
-Copy code
+#### Syntax:
+```
 check (condition) {
     // Code if condition is true
 } otherwise {
     // Code if condition is false
 }
-Example:
-mplus
-Copy code
+
 check (age > 18) {
     show("You are an adult.");
 } otherwise {
     show("You are a minor.");
 }
-6. iterate
+
+```
+## `iterate`
 The iterate keyword creates a for loop, allowing iteration over a range of values.
 
-Syntax:
-mplus
-Copy code
+#### Syntax:
+
 iterate variable from start to end {
     // Code to execute in each iteration
 }
-Example:
-mplus
-Copy code
+
 iterate i from 0 to 10 {
     show(i);
 }
-7. while
-The while keyword creates a loop that runs as long as a specified condition is true.
 
-Syntax:
-mplus
-Copy code
+
+## `while`
+The while keyword creates a loop that runs as long as a specified condition is true.
+```
 while (condition) {
     // Code to execute while condition is true
 }
-Example:
-mplus
-Copy code
+
 hold counter = 0;
 while (counter < 5) {
     show(counter);
     counter += 1;
 }
-8. attempt
+
+
+## `attempt`
 The attempt keyword is used to start a block of code where errors may occur. It’s similar to a try block in other languages.
 
-Syntax:
-mplus
-Copy code
+## Syntax:
+```
 attempt {
     // Code to attempt that might throw an error
 }
-Example:
-mplus
-Copy code
+
 attempt {
     hold result = divide(10, 0);
 }
-9. rescue
+
+```
+## `rescue`
 The rescue keyword follows attempt and handles any errors that occur in the attempt block.
 
-Syntax:
-mplus
-Copy code
+####  Syntax:
+```
+
 attempt {
     // Code that might throw an error
 } rescue (errorVariable) {
     // Code to handle the error
 }
-Example:
-mplus
-Copy code
+
 attempt {
     hold result = divide(10, 0);
 } rescue (e) {
     show("Error: Division by zero.");
 }
-10. finally
+```
+## `finally`
 The finally keyword defines a block that always executes after attempt and rescue, regardless of whether an error occurred.
 
-Syntax:
-mplus
-Copy code
+#### Syntax:
+```
 attempt {
     // Code that might throw an error
 } rescue (errorVariable) {
@@ -515,9 +508,7 @@ attempt {
 } finally {
     // Code that always runs after attempt/rescue
 }
-Example:
-mplus
-Copy code
+
 attempt {
     hold result = divide(10, 0);
 } rescue (e) {
@@ -525,52 +516,49 @@ attempt {
 } finally {
     show("Operation complete.");
 }
-11. defer
+```
+
+## `defer`
 The defer keyword is used to define an asynchronous function that may perform non-blocking operations.
 
-Syntax:
-mplus
-Copy code
+#### Syntax:
+
 defer method asyncFunctionName(parameter: Type) -> returnType {
     // Code for asynchronous task
 }
-Example:
-mplus
-Copy code
+
 defer method fetchData(url: text) -> map {
     hold response = fetch http.get(url);
     return response.data;
 }
-12. fetch
+```
+
+## `fetch`
 The fetch keyword is used in conjunction with asynchronous operations to handle data retrieval or asynchronous tasks.
 
-Syntax:
-mplus
-Copy code
+#### Syntax:
+```
 hold data = fetch asyncFunction();
-Example:
-mplus
-Copy code
+
 defer method loadData() -> map {
     hold response = fetch http.get("https://api.example.com");
     return response.data;
 }
-13. import
+```
+## `import`
 The import keyword allows for the inclusion of other modules or libraries in the code.
 
-Syntax:
-mplus
-Copy code
+#### Syntax:
+```
 import "moduleName";
-Example:
-mplus
-Copy code
+
 import "mathLibrary";
 
 method main() {
     hold result = mathLibrary.square(5);
     show(result);
 }
+```
 
 ---
 
