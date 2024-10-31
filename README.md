@@ -263,14 +263,13 @@ Lists are used to store ordered collections of items.
 hold myList: list = [1, 2, 3, 4, 5];
 show(myList[0]);  // Access first element
 ```
-```
 ### 4.2 Maps (Dictionaries)
 Maps store key-value pairs.
 ```
 hold myMap: map = {"name": "Alice", "age": 25};
 show(myMap["name"]);  // Outputs: Alice
 ```
-```
+
 ### 4.3 Tuples
 M+ supports tuples, which are immutable collections of items.
 ```
@@ -278,7 +277,7 @@ M+ supports tuples, which are immutable collections of items.
 hold myTuple = (1, "Alice", true);
 ```
 ```
-### 5. Object-Oriented Programming
+## 5. Object-Oriented Programming
 ### 6. 5.1 Classes
 M+ supports class-based object-oriented programming. Classes are defined using the class keyword.
 ```
@@ -296,7 +295,7 @@ class Person {
     }
 }
 ```
-```
+
 ### 5.2 Inheritance
 M+ allows for inheritance using the inherit keyword.
 ```
@@ -313,7 +312,7 @@ class Employee inherit Person {
     }
 }
 ```
-```
+
 ### 5.3 Interfaces
 Interfaces define a contract for classes.
 ```
@@ -327,8 +326,8 @@ class Circle inherit Drawable {
     }
 }
 ```
-```
-###  6. Functions
+
+##  6. Functions
 ### 6.1 Lambda Expressions
 M+ supports anonymous functions (lambdas).
 ```
