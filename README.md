@@ -45,7 +45,7 @@ modern programming languages. Below are examples of some basic M+ syntax.
 
 Variable Declaration
 ```
-mplus hold age: number = 25; auto name = "Alice"; // Type inferred as text
+hold age: number = 25; auto name = "Alice"; // Type inferred as text
 
 method greet(name: text) -> text {
 
