@@ -278,7 +278,7 @@ hold myTuple = (1, "Alice", true);
 ```
 
 ## 5. Object-Oriented Programming
-### 6. 5.1 Classes
+### 5.1 Classes
 M+ supports class-based object-oriented programming. Classes are defined using the class keyword.
 ```
 class Person {
